@@ -1,0 +1,36 @@
+
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "hji@gmail.com",
+    "password": "hji123"
+}
+###
+
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "hji@gmail.com",
+    "password": "hji123"
+}
+
+### Get the currently signed in user
+
+GET http://localhost:3000/auth/whoami
+
+### signout
+
+POST http://localhost:3000/auth/signout
+
+
+###
+
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "test345@gmail.com",
+    "password": "testing345"
+}
